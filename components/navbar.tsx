@@ -25,7 +25,7 @@ export function Navbar() {
         aria-label="Navegacion principal"
       >
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-md">
-          <span className="flex size-10 items-center justify-center rounded-lg border border-cyan-300/30 bg-cyan-300/10 text-cyan-300">
+          <span className="flex size-10 items-center justify-center rounded-lg border border-blue-600/30 bg-blue-600/10 text-blue-500">
             <GraduationCap aria-hidden="true" className="size-5" />
           </span>
           <span>
@@ -49,7 +49,7 @@ export function Navbar() {
                 {active ? (
                   <motion.span
                     layoutId="active-nav"
-                    className="absolute inset-0 rounded-full bg-cyan-300/15"
+                   className="absolute inset-0 rounded-full bg-blue-600/15"
                     transition={{ type: "spring", bounce: 0.18, duration: 0.55 }}
                   />
                 ) : null}
@@ -61,7 +61,7 @@ export function Navbar() {
 
         <Link
           href="/juego"
-          className="focus-ring hidden items-center gap-2 rounded-full bg-cyan-300 px-4 py-2 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200 lg:flex"
+          className="focus-ring hidden items-center gap-2 rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700 lg:flex"
         >
           <BookOpenCheck aria-hidden="true" className="size-4" />
           Practicar
@@ -98,7 +98,7 @@ export function Navbar() {
                   onClick={() => setIsOpen(false)}
                   className={`focus-ring rounded-lg px-3 py-3 text-sm font-medium ${
                     active
-                      ? "bg-cyan-300/15 text-cyan-100"
+                      ? "bg-blue-600/15 text-blue-300"
                       : "text-zinc-300 hover:bg-white/[0.04] hover:text-white"
                   }`}
                 >

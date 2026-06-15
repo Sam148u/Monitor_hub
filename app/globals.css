@@ -5,8 +5,8 @@
   --foreground: #ffffff;
   --surface: #18181b;
   --surface-soft: #27272a;
-  --primary: #22d3ee;
-  --secondary: #3b82f6;
+  --primary: #003DA5;
+  --secondary: #0066cc;
 }
 
 @theme inline {
