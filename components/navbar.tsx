@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
-import { BookOpenCheck, GraduationCap, Menu, X } from "lucide-react";
+import { BookOpenCheck, Menu, X } from "lucide-react";
 import { useState } from "react";
 
 const navItems = [
@@ -25,9 +25,12 @@ export function Navbar() {
         aria-label="Navegacion principal"
       >
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-md">
-          <span className="flex size-10 items-center justify-center rounded-lg border border-blue-600/30 bg-blue-600/10 text-blue-500">
-            <GraduationCap aria-hidden="true" className="size-5" />
-          </span>
+          {/* Logo UNAD - Reemplaza src con tu ruta de imagen */}
+          <img 
+            src="/logo-unad.png" 
+            alt="Logo UNAD" 
+            className="h-10 w-auto"
+          />
           <span>
             <span className="block text-sm font-semibold tracking-wide text-white">
               MonitorHub

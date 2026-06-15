@@ -17,7 +17,7 @@ export function FloatingParticles() {
       {particles.map((particle) => (
         <motion.span
           key={particle.id}
-          className="absolute size-1.5 rounded-full bg-cyan-300/70 shadow-[0_0_24px_rgba(34,211,238,0.7)]"
+          className="absolute size-1.5 rounded-full bg-blue-600/70 shadow-[0_0_24px_rgba(0,61,165,0.7)]"
           style={{ left: particle.left, top: particle.top }}
           animate={{ y: [-12, 18, -12], opacity: [0.25, 0.9, 0.25] }}
           transition={{

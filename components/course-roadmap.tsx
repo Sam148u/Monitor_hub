@@ -11,7 +11,7 @@ type CourseRoadmapProps = {
 export function CourseRoadmap({ steps }: CourseRoadmapProps) {
   return (
     <div className="relative">
-      <div className="absolute left-5 top-8 hidden h-[calc(100%-4rem)] w-px bg-gradient-to-b from-cyan-300 via-blue-500 to-transparent md:block" />
+      <div className="absolute left-5 top-8 hidden h-[calc(100%-4rem)] w-px bg-gradient-to-b from-blue-600 via-blue-500 to-transparent md:block" />
       <div className="grid gap-4">
         {steps.map((step, index) => (
           <motion.article
@@ -22,12 +22,12 @@ export function CourseRoadmap({ steps }: CourseRoadmapProps) {
             transition={{ delay: index * 0.08, duration: 0.45 }}
             className="glass-panel relative rounded-2xl p-5 md:ml-12"
           >
-            <div className="absolute -left-12 top-5 hidden size-10 items-center justify-center rounded-full border border-cyan-300/30 bg-background text-cyan-300 md:flex">
+            <div className="absolute -left-12 top-5 hidden size-10 items-center justify-center rounded-full border border-blue-600/30 bg-background text-blue-500 md:flex">
               {step.id}
             </div>
             <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
               <div>
-                <p className="text-sm font-semibold text-cyan-300">Reto {step.id}</p>
+                <p className="text-sm font-semibold text-blue-400">Reto {step.id}</p>
                 <h3 className="mt-1 text-xl font-semibold text-white">{step.title}</h3>
                 <p className="mt-3 text-sm leading-6 text-zinc-300">{step.description}</p>
               </div>

@@ -9,7 +9,7 @@ export function Hero() {
   return (
     <section className="relative isolate min-h-[calc(100vh-73px)] overflow-hidden px-4 py-16 sm:px-6 lg:px-8">
       <FloatingParticles />
-      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(34,211,238,0.16),transparent_30%),radial-gradient(circle_at_80%_10%,rgba(59,130,246,0.18),transparent_28%),linear-gradient(180deg,#09090b_0%,#0b1120_55%,#09090b_100%)]" />
+      <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(0,61,165,0.12),transparent_30%),radial-gradient(circle_at_80%_10%,rgba(0,102,204,0.14),transparent_28%),linear-gradient(180deg,#09090b_0%,#0b1120_55%,#09090b_100%)]" />
 
       <div className="mx-auto grid min-h-[calc(100vh-180px)] max-w-7xl items-center gap-12 lg:grid-cols-[1.04fr_0.96fr]">
         <motion.div
@@ -18,7 +18,7 @@ export function Hero() {
           transition={{ duration: 0.65, ease: "easeOut" }}
           className="max-w-3xl"
         >
-          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-300/20 bg-cyan-300/10 px-3 py-2 text-sm text-cyan-100">
+          <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-600/30 bg-blue-600/10 px-3 py-2 text-sm text-blue-200">
             <Sparkles aria-hidden="true" className="size-4" />
             Capacitacion interactiva para monitores academicos
           </div>
@@ -32,7 +32,7 @@ export function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <Link
               href="/responsabilidades"
-              className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-6 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200"
+              className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
             >
               Iniciar Capacitacion
               <ArrowRight aria-hidden="true" className="size-4" />
@@ -80,8 +80,8 @@ export function Hero() {
             </div>
 
             <div className="mt-5 grid gap-3 sm:grid-cols-2">
-              <div className="rounded-xl bg-cyan-300/10 p-4">
-                <BookOpenCheck className="mb-4 size-5 text-cyan-300" aria-hidden="true" />
+              <div className="rounded-xl bg-blue-600/10 p-4">
+                <BookOpenCheck className="mb-4 size-5 text-blue-500" aria-hidden="true" />
                 <p className="text-3xl font-semibold text-white">5</p>
                 <p className="mt-1 text-sm text-zinc-400">competencias de monitoria</p>
               </div>

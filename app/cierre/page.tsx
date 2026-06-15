@@ -51,11 +51,11 @@ export default function ClosingPage() {
   const hasResult = score !== null && total !== null;
 
   return (
-    <section className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(34,211,238,0.12),transparent_28%),#09090b] px-4 py-16 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-[radial-gradient(circle_at_top,rgba(0,61,165,0.1),transparent_28%),#09090b] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-8 lg:grid-cols-[1fr_0.8fr] lg:items-start">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
+            <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-400">
               Cierre
             </p>
             <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -74,7 +74,7 @@ export default function ClosingPage() {
                 "Tomar decisiones con retroalimentacion inmediata.",
               ].map((learning) => (
                 <div key={learning} className="glass-panel rounded-2xl p-5">
-                  <BadgeCheck className="size-6 text-cyan-300" aria-hidden="true" />
+                  <BadgeCheck className="size-6 text-blue-500" aria-hidden="true" />
                   <p className="mt-4 text-sm leading-6 text-zinc-300">{learning}</p>
                 </div>
               ))}
@@ -82,12 +82,12 @@ export default function ClosingPage() {
           </div>
 
           <aside className="glass-panel rounded-2xl p-6">
-            <HeartHandshake className="size-8 text-cyan-300" aria-hidden="true" />
+            <HeartHandshake className="size-8 text-blue-500" aria-hidden="true" />
             <h2 className="mt-5 text-2xl font-semibold text-white">Resultado obtenido</h2>
             {hasResult ? (
               <p className="mt-4 text-lg text-zinc-300">
                 Completaste Monitor Quest con{" "}
-                <span className="font-semibold text-cyan-200">
+                <span className="font-semibold text-blue-400">
                   {score}/{total}
                 </span>{" "}
                 respuestas correctas.
@@ -114,7 +114,7 @@ export default function ClosingPage() {
               </Link>
               <Link
                 href="/"
-                className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200"
+                className="focus-ring inline-flex items-center justify-center gap-2 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
               >
                 Volver al inicio
                 <ArrowRight className="size-4" aria-hidden="true" />

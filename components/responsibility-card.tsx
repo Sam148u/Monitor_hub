@@ -34,14 +34,14 @@ export function ResponsibilityCard({ responsibility, index }: ResponsibilityCard
       viewport={{ once: true, margin: "-80px" }}
       transition={{ duration: 0.45, delay: index * 0.06 }}
       whileHover={{ y: -6, scale: 1.01 }}
-      className="glass-panel group rounded-2xl p-5 transition-colors hover:border-cyan-300/30"
+      className="glass-panel group rounded-2xl p-5 transition-colors hover:border-blue-600/30"
     >
       <div className="flex items-start gap-4">
-        <div className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-cyan-300/20 bg-cyan-300/10 text-cyan-300 transition group-hover:bg-cyan-300 group-hover:text-zinc-950">
+        <div className="flex size-12 shrink-0 items-center justify-center rounded-xl border border-blue-600/30 bg-blue-600/10 text-blue-400 transition group-hover:bg-blue-600 group-hover:text-white">
           <Icon aria-hidden="true" className="size-6" />
         </div>
         <div>
-          <div className="mb-3 inline-flex rounded-full border border-white/10 px-2.5 py-1 text-xs font-semibold text-cyan-200">
+          <div className="mb-3 inline-flex rounded-full border border-white/10 px-2.5 py-1 text-xs font-semibold text-blue-300">
             Responsabilidad {responsibility.id}
           </div>
           <h2 className="text-xl font-semibold text-white">{responsibility.title}</h2>

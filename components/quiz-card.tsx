@@ -77,13 +77,13 @@ export function QuizCard() {
       >
         <div className="flex items-start justify-between gap-5">
           <div>
-            <p className="text-sm font-semibold text-cyan-300">Resultado final</p>
+          <p className="text-sm font-semibold text-blue-400">Resultado final</p>
             <h2 className="mt-2 text-3xl font-semibold text-white">
               {score}/{quizQuestions.length} respuestas correctas
             </h2>
           </div>
-          <div className="rounded-2xl border border-cyan-300/20 bg-cyan-300/10 px-4 py-3 text-center">
-            <p className="font-mono text-3xl font-semibold text-cyan-200">{percentage}%</p>
+          <div className="rounded-2xl border border-blue-600/30 bg-blue-600/10 px-4 py-3 text-center">
+            <p className="font-mono text-3xl font-semibold text-blue-400">{percentage}%</p>
           </div>
         </div>
         <p className="mt-5 text-zinc-300">{result}</p>
@@ -112,7 +112,7 @@ export function QuizCard() {
     <section className="glass-panel rounded-2xl p-5 sm:p-6">
       <ProgressBar value={progress} label="Avance de Monitor Quest" />
       <div className="mt-6 rounded-2xl border border-white/10 bg-zinc-950/60 p-5">
-        <p className="text-sm font-semibold text-cyan-300">
+        <p className="text-sm font-semibold text-blue-400">
           Caso {current + 1} de {quizQuestions.length}
         </p>
         <h2 className="mt-3 text-2xl font-semibold leading-snug text-white">{question.case}</h2>
@@ -127,7 +127,7 @@ export function QuizCard() {
               ? "border-emerald-300/50 bg-emerald-300/10 text-emerald-50"
               : answered && optionIsSelected
                 ? "border-rose-300/50 bg-rose-300/10 text-rose-50"
-                : "border-white/10 bg-white/[0.03] text-zinc-200 hover:border-cyan-300/30 hover:bg-cyan-300/10";
+                : "border-white/10 bg-white/[0.03] text-zinc-200 hover:border-blue-600/30 hover:bg-blue-600/10";
 
           return (
             <button

@@ -5,10 +5,10 @@ import { responsibilities } from "@/data/responsibilities";
 
 export default function ResponsibilitiesPage() {
   return (
-    <section className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(34,211,238,0.12),transparent_32%),#09090b] px-4 py-16 sm:px-6 lg:px-8">
+    <section className="min-h-screen bg-[radial-gradient(circle_at_top_left,rgba(0,61,165,0.1),transparent_32%),#09090b] px-4 py-16 sm:px-6 lg:px-8">
       <div className="mx-auto max-w-7xl">
         <div className="max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-cyan-300">
+          <p className="text-sm font-semibold uppercase tracking-[0.18em] text-blue-400">
             Responsabilidades del monitor
           </p>
           <h1 className="mt-4 text-4xl font-semibold leading-tight text-white sm:text-5xl">
@@ -33,7 +33,7 @@ export default function ResponsibilitiesPage() {
         <div className="mt-10 flex justify-end">
           <Link
             href="/curso"
-            className="focus-ring inline-flex items-center gap-2 rounded-full bg-cyan-300 px-5 py-3 text-sm font-semibold text-zinc-950 transition hover:bg-cyan-200"
+            className="focus-ring inline-flex items-center gap-2 rounded-full bg-blue-600 px-5 py-3 text-sm font-semibold text-white transition hover:bg-blue-700"
           >
             Aplicar al caso practico
             <ArrowRight className="size-4" aria-hidden="true" />
