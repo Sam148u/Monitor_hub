@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import {
+  ArrowRight,
   Bot,
   ChartNoAxesCombined,
   ClipboardCheck,
@@ -53,6 +54,11 @@ export function ResponsibilityCard({ responsibility, index }: ResponsibilityCard
           Ejemplo practico
         </p>
         <p className="mt-2 text-sm leading-6 text-zinc-300">{responsibility.example}</p>
+      </div>
+
+      <div className="mt-4 flex items-center justify-between rounded-xl border border-blue-500/20 bg-blue-500/5 px-4 py-3 text-sm text-blue-100">
+        <span>Ver guía interactiva</span>
+        <ArrowRight className="size-4" aria-hidden="true" />
       </div>
     </motion.article>
   );

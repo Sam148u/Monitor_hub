@@ -25,9 +25,8 @@ export function Navbar() {
         aria-label="Navegacion principal"
       >
         <Link href="/" className="focus-ring flex items-center gap-3 rounded-md">
-          {/* Logo UNAD - Reemplaza src con tu ruta de imagen */}
           <img 
-            src="/logo-unad.png" 
+            src="/logounad.png" 
             alt="Logo UNAD" 
             className="h-10 w-auto"
           />

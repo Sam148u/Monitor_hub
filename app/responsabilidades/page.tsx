@@ -22,11 +22,16 @@ export default function ResponsibilitiesPage() {
 
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {responsibilities.map((responsibility, index) => (
-            <ResponsibilityCard
+            <Link
               key={responsibility.id}
-              responsibility={responsibility}
-              index={index}
-            />
+              href={`/responsabilidades/${responsibility.id.toLowerCase()}/`}
+              className="block rounded-3xl focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-400"
+            >
+              <ResponsibilityCard
+                responsibility={responsibility}
+                index={index}
+              />
+            </Link>
           ))}
         </div>
 
